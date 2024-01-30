@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "reproducer"
+version = "0.0.0"
+description = "reproducer"
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.13"
+ddtrace = "==2.5.2"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "==8.0.0"
